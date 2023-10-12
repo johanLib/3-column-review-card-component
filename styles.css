@@ -1,0 +1,115 @@
+:root {
+  /*colors*/
+      --bright-orange: hsl(31, 77%, 52%);
+      --Dark-cyan: hsl(184, 100%, 22%);
+      --Very-dark-cyan: hsl(179, 100%, 13%);
+      /*(paragraphs)*/
+      --transparent-white: hsla(0, 0%, 100%, 0.75);
+      /*(background, headings, buttons)*/
+      --very-light-gray: hsl(0, 0%, 95%);
+  /*fonts*/
+      --fs-regular: 15px;
+
+      --fw-300: 300;
+      --fw-400: 400;
+      --fw-700: 700;
+  /*fonts family*/
+      --fm-1: 'Big Shoulders Display', sans-serif;
+      --fm-2: 'Lexend Deca', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font: inherit;
+}
+
+body {
+  font-size: var(--fs-regular);
+  background-color: var(--very-light-gray);
+}
+
+@media (min-width: 600px) {
+  body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+  }
+
+  .primary-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 54.5rem;
+    height: 32rem;
+    overflow: hidden;
+    border-radius: 0.75rem;
+  }
+
+  .grid-group {
+    display: grid;
+    gap: 2.46rem;
+  }
+}
+
+.card1 {
+  background-color: var(--bright-orange);
+  display: grid;
+  align-content: start;
+  gap: 5rem;
+  padding: 3rem 2.7rem;
+}
+
+.card2 {
+  background-color: var(--Dark-cyan);
+  display: grid;
+  align-content: start;
+  gap: 5rem;
+  padding: 3rem 2.7rem;
+}
+
+.card3 {
+  background-color: var(--Very-dark-cyan);
+  display: grid;
+  align-content: start;
+  gap: 5rem;
+  padding: 3rem 2.7rem;
+}
+
+.grid-group h1 {
+  font-family: var(--fm-1);
+  font-weight: var(--fw-700);
+  font-size: 2rem;
+  color: var(--very-light-gray);
+  text-transform: uppercase;
+}
+
+.grid-group p {
+  font-family: var(--fm-2);
+  font-weight: var(--fw-300);
+  color: var(--transparent-white);
+  line-height: 1.6;
+}
+
+button {
+  width: 9rem;
+  height: 3.06rem;
+  background-color: var(--very-light-gray);
+  border: none;
+  border-radius: 4rem;
+  font-family: var(--fm-2);
+  font-weight: var(--fw-400);
+  line-height: 1;
+}
+
+button.card-1 {
+  color: var(--bright-orange);
+}
+button.card-2 {
+  color: var(--Dark-cyan);
+}
+button.card-3 {
+  color: var(--Very-dark-cyan);
+}
