@@ -54,6 +54,12 @@ body {
   }
 }
 
+.primary-card {
+  margin: 2rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
 .card1 {
   background-color: var(--bright-orange);
   display: grid;
@@ -102,7 +108,9 @@ button {
   font-family: var(--fm-2);
   font-weight: var(--fw-400);
   line-height: 1;
+  cursor: pointer;
 }
+
 
 button.card-1 {
   color: var(--bright-orange);
@@ -112,4 +120,20 @@ button.card-2 {
 }
 button.card-3 {
   color: var(--Very-dark-cyan);
+}
+
+button.card-1:hover {
+  border: 0.15rem solid white;
+  background-color: var(--bright-orange);
+  color: white;
+}
+button.card-2:hover {
+  border: 0.15rem solid white;
+  background-color:var(--Dark-cyan);
+  color: white;
+}
+button.card-3:hover {
+  border: 0.15rem solid white;
+  background-color: var(--Very-dark-cyan);
+  color: white;
 }
